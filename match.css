@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0 0 0;
+    font-family: 'Gugi', cursive;
+    background: linear-gradient(to left, #5433FF, #20BDFF, #A5FECB);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#container {
+    width: 98%;
+    margin: 100px auto;
+    padding: 50px 0;
+    position: relative;
+}
+
+#left_div {
+    width: 43%;
+    margin: 0 1% 0 0;
+    overflow: auto;
+    float: left;
+}
+
+#left_div i {
+    margin: 0 3px 0 0;
+    color: red;
+}
+
+.left_div-topl {
+    width: 50%;
+    padding: 10% 0 0 5%;
+    float: left;
+}
+
+.left_div-topr {
+    width: 50%;
+    padding: 10% 0 0 9%;
+    float: left;
+}
+
+.left_div-midt {
+    padding: 20% 0 5% 5%;
+}
+
+.left_div-midt textarea {
+    resize: none;
+}
+
+.left_div-midb {
+    margin: 5% 0 5% 5%;
+}
+
+.left_div-submit {
+    margin: 0 12% 0 5%;
+    width: 120px;
+    height: 30px;
+    float: right;
+    cursor: pointer;
+}
+
+/*Right div*/
+#right_div {
+    width: 56%;
+    float: left;
+    overflow: auto;
+    height: 400px;
+}
+
+#right_div table {
+    width: 100%;
+}
+
+.right_div-trow td {
+    padding: 5px 30px;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    font-family: 'EB Garamond', serif;
+}
+
+.right_div-row td {
+    text-align: center;
+    height: 40px;
+    font-size: 17px;
+    font-family: 'EB Garamond', serif;
+}
+
+.right_div-msg {
+    width: 150px;
+    height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #307092;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.msg {
+    display: none;
+}
+
+.num_of_ply {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #307092;
+  text-decoration: underline;
+  cursor: pointer;  
+}
+
+.wrap {
+    width: 100%;
+}
+
+.wrap label {
+    color: #e8e8e8;
+}
+
+.wrap i {
+    color: #fff;
+}
+
+/*Middle div*/
+#mid_div {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 100px;
+    border: 1px solid #000;
+    display: none;
+    background-color: #145374;
+    border-radius: 5px;
+}
+
+#mid_div label {
+    color: #fff;
+}
+
+#mid_div span {
+    position: absolute;
+    top: 8px;
+    left: 360px;
+    color: white;
+    cursor: pointer; 
+}
+
+.msg p {
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.msg span {
+    position: absolute;
+    top: 5px;
+    left: 470px;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+    padding: 3px 7px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.msg span:hover {
+    background: black;
+    color:white;
+}
+
+#mid_div label {
+    display: block;
+}
+
+.mid_div-top {
+    margin: 20px;
+}
+
+.mid_div-mid {
+    margin: 20px;
+}
+
+.mid_div-bottom {
+    margin: 20px;
+}
+
+#mid_div span {
+    position: absolute;
+    top: 10px;
+    left: 375px;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+    padding: 3px 7px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #fff;
+}
+
+#mid_div span:hover {
+   color: #fff;
+   background: #000;
+}
+
+#mid_div input {
+    padding: 4px 2px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.mid_div-submit {
+    width: 175px;
+    height: 30px;
+    margin-left: 20px;
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+    font-family: 'Stylish', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#mid_div-desc {
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 20px 100px;
+   border: 1px solid #000;
+   display: none;
+   width: 30%;
+   min-height: 200px;
+}
+
+label {
+    font-style: italic;
+    font-family: 'Stylish', sans-serif;
+}
+
+input[type="date"] {
+    padding: 1px;
+    border: 2px solid #00334e;
+    border-radius: 5px; 
+}
+
+input[type="time"] {
+    padding: 1px;
+    border: 2px solid #00334e;
+    border-radius: 5px; 
+}
+
+textarea {
+    padding: 1px;
+    border: 2px solid #00334e;
+    border-radius: 5px;  
+    font-family: 'Stylish', sans-serif;
+    font-size: 18px;
+}
+
+input[type="number"] {
+    padding: 1px;
+    border: 2px solid #00334e;
+    border-radius: 5px;
+}
+
+#left_div input[type="submit"] {
+    border: 2px solid #00334e;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    font-family: 'Stylish', sans-serif;
+    font-size: 20px;
+}
+
+button {
+    border: 2px solid #00334e;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    font-family: 'Stylish', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
